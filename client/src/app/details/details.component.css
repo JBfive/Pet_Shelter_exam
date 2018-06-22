@@ -1,0 +1,10 @@
+button{
+	background: linear-gradient(#bed2c3, #445b69);
+	
+	height: 30px;
+	border-radius: 4px;
+	margin-left: 50px;
+}
+#likes{
+ 	background: linear-gradient(#c7d6e9, #455b6b)
+}

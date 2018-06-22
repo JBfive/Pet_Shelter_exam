@@ -1,0 +1,22 @@
+table, th, td{
+	border: 2px solid black;
+	width: 500px;
+
+}
+th, tr:nth-child(even) {
+    background-color: #d3d3d3
+}
+th{
+	color: white;
+}
+button{
+	margin: 10px;
+}
+.edit{
+	background: linear-gradient(#f4dec6, #475c69);
+	color: white;
+}
+.details{
+	background: linear-gradient(#c2d1e5, #4d6373);
+	color: white;
+}

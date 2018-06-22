@@ -1,0 +1,24 @@
+<h3>Know of a pet needing a home?</h3>
+	<ul *ngIf="errs"> 
+      <li *ngFor="let e of errs"> 
+        {{ e }} 
+        
+      </li>
+    </ul>
+<form (submit) = "onSubmit()">
+	<p>Pet name:</p>
+	<input type="text" name="name" [(ngModel)]="pet.name">
+	<p>Pet Type:</p>
+	<input type="text" name="type" [(ngModel)]="pet.type">
+	<p>Description:</p>
+	<input type="text" name="description" [(ngModel)]="pet.description">
+	<p>Skills:</p>
+	<div class="skills">
+		<p>		Skill 1: <input type="text" name="skill1" [(ngModel)]="pet.skill1"></p>
+		<p>		Skill 2: <input type="text" name="skill2" [(ngModel)]="pet.skill2"></p>
+		<p>		Skill 3: <input type="text" name="skill3" [(ngModel)]="pet.skill3"></p>
+	</div>
+	<div class="buttons">
+	<button type="submit">Add pet</button> <button [routerLink]="['/']">Cancel</button>
+	</div>
+</form>

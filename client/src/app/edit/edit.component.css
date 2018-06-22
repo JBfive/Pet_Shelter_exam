@@ -1,0 +1,25 @@
+
+form{
+	border: 2px solid black;
+	width: 500px;
+	color: lightgrey;
+}
+button{
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: #66bbff;
+	border-radius: 6px;
+}
+.buttons{
+	text-align: center;
+}
+.skills{
+	margin-left: 20px;
+}
+input{
+	border-radius: 6px;
+}
+li{
+	color: purple;
+}
