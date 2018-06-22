@@ -17,7 +17,7 @@ export class EditComponent implements OnInit {
   	private _router: Router) { }
 
   ngOnInit() {
-  	this.update = {name: '', type: '', description: '', skill1: '', skill2: '', skill3: ''}
+  	this.update = this.cur
   	this._route.params.subscribe((params: Params) => this.pet_id = params['id']);
   	this.getOne(this.pet_id);
   }
@@ -29,11 +29,12 @@ export class EditComponent implements OnInit {
   		})
   	}
   	edit(id: any){
+
 		
-		let observable = this._http.editPet(id, this.update);
+		let observable = this._http.editPet(id, this.cur);
 		
 		observable.subscribe(data=> {
-			console.log(this.cur)
+			console.log(this.update)
 		if(data['errors']){
 			this.errs=[]
 		

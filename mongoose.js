@@ -22,6 +22,6 @@ PetsSchema.path('name').validate({ //async custom validation, can mess with upda
 			// for updates/addQuotes
 		})
 	},
-	message:"Author already exists" //returns just as above with the Schema error messages 
+	message:"Pet already exists" //returns just as above with the Schema error messages 
 })
 module.exports = mongoose.model('pets', PetsSchema)
